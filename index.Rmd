@@ -15,6 +15,12 @@ link-citations: yes
 github-repo: rstudio/bookdown-demo
 ---
 
+![Testing 1](HellsCanyon.JPEG)
+
+```{r image, fig.cap="Testing 2", fig.align='center', out.width='100%'}
+knitr::include_graphics("HellsCanyon.JPEG")
+```
+
 # About
 
 This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
@@ -35,9 +41,7 @@ You can render the HTML version of this example book without changing anything:
 
 1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
 
-Or build the book from the R console:
-
-```{r, eval=FALSE}
+Or build the book from the R console:```{r, eval=FALSE}
 bookdown::render_book()
 ```
 
